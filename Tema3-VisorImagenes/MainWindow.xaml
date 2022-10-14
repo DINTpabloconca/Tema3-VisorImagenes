@@ -6,6 +6,32 @@
         xmlns:local="clr-namespace:Tema3_VisorImagenes"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="900" MinHeight="600" MinWidth="600">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="DockPanel.Dock" Value="Top"></Setter>
+            <Setter Property="Text" Value="Visor de imágenes"></Setter>
+            <Setter Property="DockPanel.Dock" Value="Top"></Setter>
+            <Setter Property="FontSize" Value="40"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="Height" Value="100"></Setter>
+
+        </Style>
+        <Style TargetType="{x:Type Image}">
+            <Setter Property="Height" Value="100"></Setter>
+            <Setter Property="Margin" Value="3"></Setter>
+        </Style>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+        </Style>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Height" Value="20"></Setter>
+            <Setter Property="Width" Value="90"></Setter>
+            <Setter Property="Margin" Value="5"></Setter>
+        </Style>
+    </Window.Resources>
+    
     <DockPanel>
             <DockPanel DockPanel.Dock="Bottom" Background="LightBlue" Margin="10" Height="50">
                 <TextBlock Text="Nº de imágenes: 10" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200"></TextBlock>
@@ -14,31 +40,31 @@
         <DockPanel DockPanel.Dock="Right" HorizontalAlignment="Center" Background="LightGreen" Width="100">
             <DockPanel DockPanel.Dock="Bottom">
                 <WrapPanel>
-                    <Button Height="20" Width="90" Margin="5" Content="Rotar"></Button>
-                    <Button Height="20" Width="90" Margin="5" Content="Recortar"></Button>
+                    <Button Content="Rotar"></Button>
+                    <Button Content="Recortar"></Button>
                 </WrapPanel>
             </DockPanel>
             <WrapPanel>
-                <Button Height="20" Width="90" Margin="5" Content="Añadir imágen"></Button>
-                <Button Height="20" Width="90" Margin="5" Content="Eliminar imágen"></Button>
-                <Button Height="20" Width="90" Margin="5" Content="Eliminar todas"></Button>
+                <Button Content="Añadir imágen"></Button>
+                <Button Content="Eliminar imágen"></Button>
+                <Button Content="Eliminar todas"></Button>
             </WrapPanel>
 
         </DockPanel>
-        <TextBox DockPanel.Dock="Top" Text="Visor de imágenes" FontSize="40" HorizontalAlignment="Center" Height="100"></TextBox>
+        <TextBox></TextBox>
         <WrapPanel>
-            <Image Source="resources/si.jpg" Margin="3" Height="100" />
-            <Image Source="resources/si.jpg" Margin="3" Height="100" />
-            <Image Source="resources/si.jpg" Margin="3" Height="100" />
-            <Image Source="resources/si.jpg" Margin="3" Height="100" />
-            <Image Source="resources/si.jpg" Margin="3" Height="100" />
-            <Image Source="resources/si.jpg" Margin="3" Height="100" />
-            <Image Source="resources/si.jpg" Margin="3" Height="100" />
-            <Image Source="resources/si.jpg" Margin="3" Height="100" />
-            <Image Source="resources/si.jpg" Margin="3" Height="100" />
-            <Image Source="resources/si.jpg" Margin="3" Height="100" />
-            <Image Source="resources/si.jpg" Margin="3" Height="100" />
-            <Image Source="resources/si.jpg" Margin="3" Height="100" />
+            <Image Source="resources/si.jpg" />
+            <Image Source="resources/si.jpg" />
+            <Image Source="resources/si.jpg" />
+            <Image Source="resources/si.jpg" />
+            <Image Source="resources/si.jpg" />
+            <Image Source="resources/si.jpg" />
+            <Image Source="resources/si.jpg" />
+            <Image Source="resources/si.jpg" />
+            <Image Source="resources/si.jpg" />
+            <Image Source="resources/si.jpg" />
+            <Image Source="resources/si.jpg" />
+            <Image Source="resources/si.jpg" />
             
         </WrapPanel>
     </DockPanel>
